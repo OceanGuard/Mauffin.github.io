@@ -6,8 +6,14 @@ const Hero = () => {
     <main className="container">
       <section className="container-hero">
         <img src={Logo} alt="Logo Ocean Guard" />
+        <div className="ocean">
         <h1>Ocean Guard </h1>
-        <h5>preservando la vida marina</h5>
+        <div className="preservar">
+          <h5>preservando la vida marina</h5>
+        </div>
+        
+        </div>
+        
       </section>
 
       <section className="">

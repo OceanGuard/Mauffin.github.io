@@ -5,26 +5,28 @@
 }
 
 
-.container-hero h1{
-  text-align: center;
-  color: #f1f8f7;
-}
-
-
-.container-hero{
-  text-align: center;
-}
-
-
 .container{
   direction: flex;
   justify-content: center;
 }
 
 .container{
-  background-color: #D5F4EF;
-  max-width: 100%;
-  border:1px solid black;
-  height: 1063;
+  width: 100%;
+  height: 1063px;
+}
 
+/* texto hero*/
+
+.container-hero{
+  text-align: center;
+}
+
+.container-hero h5{
+  text-align: center;
+  color:#ABD1C6;
+}
+
+.container-hero h1{
+  text-align: center;
+  color: #f1f8f7;
 }
