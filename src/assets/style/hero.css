@@ -30,3 +30,15 @@
   text-align: center;
   color: #f1f8f7;
 }
+
+/* end texto hero*/
+
+
+/* img */
+
+img{
+  position: relative;
+  top:50px
+}
+
+/* end img*/

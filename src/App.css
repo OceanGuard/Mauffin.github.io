@@ -1,7 +1,7 @@
 #root {
   margin: 0 auto;
   padding: 0px;
-  background-color:#D5F4EF ;
+  background-color:#078080 ;
 }
 
 /* configuracion de etiquetas global*/
@@ -24,4 +24,5 @@ h5{
 h5{
   position: relative;
   bottom: 60px;
+  color:#abd1c6;
 }
