@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: none;
+}
+
+
+.container-hero h1{
+  text-align: center;
+  color: #f1f8f7;
+}
+
+
+.container-hero{
+  text-align: center;
+}
+
+
+.container{
+  direction: flex;
+  justify-content: center;
+}
+
+.container{
+  background-color: #D5F4EF;
+  max-width: 100%;
+  border:1px solid black;
+  height: 1063;
+
+}
