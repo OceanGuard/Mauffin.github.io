@@ -16,7 +16,7 @@ const Hero = () => {
         
       </section>
 
-      <section className="">
+      <section className="sectionContianer1">
         <img src="" alt="" />
       </section>
     </main>
