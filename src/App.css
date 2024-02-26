@@ -1,42 +1,28 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0px;
+  background-color:#078080 ;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* configuracion de etiquetas global*/
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 10.625rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h5{
+  font-family: "Poly", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  font-size: 2.25rem;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+h5{
+  position: relative;
+  bottom: 60px;
+  color:#abd1c6;
 }
