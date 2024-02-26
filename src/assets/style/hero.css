@@ -1,44 +1,53 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: none;
 }
 
-
-.container{
+.container {
   direction: flex;
   justify-content: center;
 }
 
-.container{
+.container {
+  background-color: #078080;
   width: 100%;
   height: 1063px;
 }
 
 /* texto hero*/
 
-.container-hero{
+.container-hero {
   text-align: center;
 }
 
-.container-hero h5{
+.container-hero h5 {
   text-align: center;
-  color:#ABD1C6;
+  color: #abd1c6;
 }
 
-.container-hero h1{
+.container-hero h1 {
   text-align: center;
   color: #f1f8f7;
 }
 
 /* end texto hero*/
 
-
 /* img */
 
-img{
+img {
   position: relative;
-  top:50px
+  top: 50px;
 }
 
 /* end img*/
+.gradiant {
+  width: 100%;
+  height: 250px;
+  background: rgb(7, 128, 128);
+  background: linear-gradient(
+    180deg,
+    rgba(7, 128, 128, 1) 0%,
+    rgba(213, 244, 239, 1) 100%
+  );
+}

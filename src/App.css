@@ -1,28 +1,26 @@
 #root {
   margin: 0 auto;
   padding: 0px;
-  background-color:#078080 ;
 }
 
 /* configuracion de etiquetas global*/
 
-h1{
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style:normal;
+  font-style: normal;
   font-size: 10.625rem;
 }
 
-h5{
+h5 {
   font-family: "Poly", sans-serif;
   font-weight: 400;
-  font-style:normal;
+  font-style: normal;
   font-size: 2.25rem;
-  
 }
 
-h5{
+h5 {
   position: relative;
   bottom: 60px;
-  color:#abd1c6;
+  color: #abd1c6;
 }
