@@ -14,8 +14,21 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="sectionContianer1">
-        <img src="" alt="" />
+      <section className="sectioncontainer1">
+
+        <div className="div-texto">
+        <h1>
+        Preservando la Vida Marina
+        </h1>
+        <p>En Ocean Guard, no solo hablamos de preservación,</p>
+        <p>
+        ¡la llevamos a cabo! Nuestra misión es trazar un mapa didáctico de las áreas y especies en veda
+        </p>
+        </div>
+
+        <div className="div-img">
+        <img src={Logo} alt="" />
+        </div>
       </section>
     </main>
   );

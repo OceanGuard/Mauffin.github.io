@@ -1,0 +1,22 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: none;
+}
+
+
+.sectioncontainer1{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  
+}
+
+.sectioncontainer1 h1{
+  font-size: 300;
+}
+
+.sectioncontainer1{
+  gap: 20px; 
+  padding: 20px; 
+  margin-top: 200px;
+}
