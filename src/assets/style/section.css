@@ -14,6 +14,12 @@
   gap: 288px;
   padding: 20px;
   margin-top: 0px;
+  width: 1536px;
+  margin: auto;
+}
+.sectionbg{
+  width: 100%;
+  background-color: #d5f4ef;
 }
 
 .sectioncontainer1 h1 {
@@ -53,14 +59,15 @@ img {
 display: grid;
 grid-template-columns: 1fr 1fr;
 place-items: center;
+background-color: #d5f4ef;
 }
 
 .sectionContainer2{
   border-right: 1px solid black;
-  width: 100%;
-  height: 1063px ;
-  gap: 97px;
-  
+    width: 1536px;
+    height: 1063px;
+    margin: auto;
+    gap: 113px;
 }
 
 .sectionLeft-text h1{

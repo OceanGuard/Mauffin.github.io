@@ -3,6 +3,7 @@ import Logo from "../../assets/img/piratitas.webp";
 const Section = () => {
   return (
     <>
+    <section className="sectionbg">
       <section className="sectioncontainer1">
         <div className="div-texto">
           <h1>Preservando la Vida Marina</h1>
@@ -19,8 +20,10 @@ const Section = () => {
         <div className="div-img">
           <img src={Logo} alt="" />
         </div>
+        </section>
       </section>
 
+      <section className="sectionbg">
       <section className="sectionContainer2">
         <div className="sectionLeft-text"> 
           <h1>
@@ -34,6 +37,7 @@ const Section = () => {
             y especies en veda
           </p>
         </div>
+      </section>
       </section>
     </>
   );
