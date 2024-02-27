@@ -35,10 +35,20 @@
 
 /* img */
 
-img {
+.container-hero img {
   position: relative;
   top: 50px;
 }
+
+.arrow img{
+  height: 80px;
+  width: 80px;
+  animation: bounce 4s ease infinite;
+  margin-top: 77px;
+
+}
+
+
 
 /* end img*/
 .gradiant {
@@ -51,3 +61,14 @@ img {
     rgba(213, 244, 239, 1) 100%
   );
 }
+
+
+/* Star Animation Arrow*/
+
+@keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  100% { transform:translateY(0); }
+}
+
+/* End Animation Arrow*/

@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: none;
 }
-
+/* Primera seccion*/
 .sectioncontainer1 {
   background-color: #d5f4ef;
   display: grid;
@@ -42,3 +42,42 @@ img {
   width: 404px;
   height: 505px;
 }
+
+/* End Primer Seccion */
+
+
+
+/* Start Segunda Seccion */
+
+.sectionContainer2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+place-items: center;
+}
+
+.sectionContainer2{
+  border-right: 1px solid black;
+  width: 100%;
+  height: 1063px ;
+  gap: 97px;
+  
+}
+
+.sectionLeft-text h1{
+  font-size: 6.5rem;
+  color: #3fbab3;
+  font-family: poly, "sans-serif";
+  margin-left: 26px;
+}
+
+.secctionRight-text{
+  font-size: 3rem;
+  font-family: poppins, "sans-serif";
+  margin-left: 26px;
+}
+
+
+
+
+
+/* End Segunda Seccion */
