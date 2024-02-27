@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: none;
 }
-
+/* Primera seccion*/
 .sectioncontainer1 {
   background-color: #d5f4ef;
   display: grid;
@@ -14,6 +14,12 @@
   gap: 288px;
   padding: 20px;
   margin-top: 0px;
+  width: 1536px;
+  margin: auto;
+}
+.sectionbg{
+  width: 100%;
+  background-color: #d5f4ef;
 }
 
 .sectioncontainer1 h1 {
@@ -42,3 +48,43 @@ img {
   width: 404px;
   height: 505px;
 }
+
+/* End Primer Seccion */
+
+
+
+/* Start Segunda Seccion */
+
+.sectionContainer2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+place-items: center;
+background-color: #d5f4ef;
+}
+
+.sectionContainer2{
+  border-right: 1px solid black;
+    width: 1536px;
+    height: 1063px;
+    margin: auto;
+    gap: 113px;
+}
+
+.sectionLeft-text h1{
+  font-size: 6.5rem;
+  color: #3fbab3;
+  font-family: poly, "sans-serif";
+  margin-left: 26px;
+}
+
+.secctionRight-text{
+  font-size: 3rem;
+  font-family: poppins, "sans-serif";
+  margin-left: 26px;
+}
+
+
+
+
+
+/* End Segunda Seccion */
