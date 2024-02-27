@@ -1,14 +1,15 @@
 import React from "react";
 import data from "../../../assets/regiones_by_id_tarapaca";
 import { Link } from "react-router-dom";
+import map from "../../Map/Map"
 
-function ListaRegion() {
+function ListaRegion( {setMarkerPosition }) {
   return (
     <>
       <ul>
         {data.map((item) => (
           <li key={item.regionId}>
-            <Link onClick={viewMap()} to={`/map/${item.regionId}`}>
+            <Link to={`/map/${item.regionId}`} onClick={() => setMarkerPosition([item.coordenadaX, item.coordenadaY])} >
               {item.nombreRegion}
             </Link>
           </li>

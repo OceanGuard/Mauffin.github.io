@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/map/:key" element={<Map />} />
-        <Route path="/lista" element={<ListaRegion />} />
+        <Route path="/lista" element={<ListaRegion />}  />
 
       </Routes>
     </div>
