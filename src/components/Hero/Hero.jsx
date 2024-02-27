@@ -1,9 +1,10 @@
 import "../../assets/style/hero.css";
 import Logo from "../../assets/img/LogoOcean.svg";
-{/*import Arrow from "../../assets/img/arrow-scroll.svg"*/}
-import Scroll from "../../assets/img/scroll.svg"
+{
+  /*import Arrow from "../../assets/img/arrow-scroll.svg"*/
+}
+import Scroll from "../../assets/img/scroll.svg";
 import Secction from "../section/Section";
-
 
 const Hero = () => {
   return (
