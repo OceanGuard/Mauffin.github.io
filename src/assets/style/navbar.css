@@ -16,7 +16,6 @@
 .navbar li {
   display: inline-block;
   border: none;
-  border-radius: 50px;
 }
 
 .navbar a {
@@ -31,7 +30,4 @@
 .navbar a:hover {
   background-color: #ddd;
   color: black;
-}
-.navbar {
-  margin-bottom: 40px;
 }
