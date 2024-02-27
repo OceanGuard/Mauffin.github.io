@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/nav"
 import Map from "./components/Map/Map"
 
 import './App.css'
-import { Router,Route } from "react-router-dom"
+import { Routes ,Route } from "react-router-dom"
 
 function App() {
 
@@ -11,11 +11,11 @@ function App() {
   return (
     <div>
        <Navbar/>
-      <Router>
+      <Routes>
         <Route path="/" element={ <Hero/>} />
         <Route path="/map" element={ <Map/>} />
         
-      </Router>
+      </Routes>
     </div>
   )
 }
