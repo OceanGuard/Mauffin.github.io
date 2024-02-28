@@ -16,9 +16,6 @@ const nav = () => {
           <li>
             <Link to="/sobre-nosotros">Sobre Nosotros</Link>
           </li>
-          <li>
-            <Link to="/info">Informacion</Link>
-          </li>
         </ul>
       </nav>
     </>

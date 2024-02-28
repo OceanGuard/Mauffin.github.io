@@ -5,6 +5,7 @@ import Logo from "../../assets/img/LogoOcean.svg";
 }
 import Scroll from "../../assets/img/scroll.svg";
 import Secction from "../section/Section";
+import Informacion from "../Informacion/Informacion";
 
 const Hero = () => {
   return (
@@ -25,6 +26,7 @@ const Hero = () => {
       </main>
       <div className="gradiant"></div>
       <Secction />
+      <Informacion />
     </>
   );
 };

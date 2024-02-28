@@ -1,5 +1,6 @@
 import "../../assets/style/section.css";
 import Logo from "../../assets/img/piratitas.webp";
+
 const Section = () => {
   return (
     <>
