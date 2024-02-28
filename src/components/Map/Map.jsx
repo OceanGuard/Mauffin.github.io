@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { map } from "leaflet";
 import ListaRegion from "../Pages/Lista/ListaRegion";
+import Modal from "../Modal/Modal"
 
 /* let marker = [-20.23989283970564, -70.13418353488936]; */
 
@@ -52,7 +53,9 @@ const Map = () => {
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={marker}>
-          <Popup>Region de Tarapacá</Popup>
+          <Popup>Region de Tarapacá
+            <Modal/>
+          </Popup>
         </Marker>
       </MapContainer>
       <ListaRegion setMarkerPosition={setMarkerPosition} />
