@@ -5,7 +5,7 @@ import SobreNosotros from "./components/SobreNosotros/SobreNosotros";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Informacion from "./components/Informacion/Informacion";
+import ListaRegion from "./components/Pages/Lista/ListaRegion";
 
 function App() {
   {
@@ -17,8 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/map" element={<Map />} />
-        <Route path="/info" element={<Informacion />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        <Route path="/map/:key" element={<Map />} />
+        <Route path="/lista" element={<ListaRegion />} />
       </Routes>
     </div>
   );
