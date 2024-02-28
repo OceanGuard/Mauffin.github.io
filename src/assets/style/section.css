@@ -8,7 +8,7 @@
   background-color: #d5f4ef;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-left: 2px solid black;
+  border-left: 1px solid black;
 }
 .sectioncontainer1 {
   gap: 288px;
@@ -17,7 +17,7 @@
   width: 1536px;
   margin: auto;
 }
-.sectionbg{
+.sectionbg {
   width: 100%;
   background-color: #d5f4ef;
 }
@@ -42,7 +42,7 @@
 }
 .div-texto {
   margin-left: 62px;
-  border-left: 2px solid black;
+  /*border-left: 2px solid black;*/
 }
 img {
   width: 404px;
@@ -51,40 +51,34 @@ img {
 
 /* End Primer Seccion */
 
-
-
 /* Start Segunda Seccion */
 
-.sectionContainer2{
-display: grid;
-grid-template-columns: 1fr 1fr;
-place-items: center;
-background-color: #d5f4ef;
+.sectionContainer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  background-color: #d5f4ef;
 }
 
-.sectionContainer2{
+.sectionContainer2 {
   border-right: 1px solid black;
-    width: 1536px;
-    height: 1063px;
-    margin: auto;
-    gap: 113px;
+  width: 1536px;
+  height: 1063px;
+  margin: auto;
+  gap: 113px;
 }
 
-.sectionLeft-text h1{
+.sectionLeft-text h1 {
   font-size: 6.5rem;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
 }
 
-.secctionRight-text{
+.secctionRight-text {
   font-size: 3rem;
   font-family: poppins, "sans-serif";
   margin-left: 26px;
 }
-
-
-
-
 
 /* End Segunda Seccion */
