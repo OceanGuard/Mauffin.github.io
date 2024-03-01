@@ -6,6 +6,7 @@ import Map from "./components/Map/Map";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import ListaRegion from "./components/Pages/Lista/ListaRegion";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/map/:key" element={<Map />} />
         <Route path="/lista" element={<ListaRegion />}  />
-
       </Routes>
+      <Footer/>
     </div>
   );
 }
