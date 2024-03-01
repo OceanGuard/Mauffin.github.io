@@ -1,24 +1,18 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "../../assets/style/map.css";
-import "leaflet/dist/leaflet.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import "../../assets/style/map.css";
+import "leaflet/dist/leaflet.css";
 import axios from "axios";
-import { map } from "leaflet";
 import ListaRegion from "../Pages/Lista/ListaRegion";
-import Modal from "../Modal/Modal"
-
-/* let marker = [-20.23989283970564, -70.13418353488936]; */
+import Modal from "../Modal/Modal";
 
 const Map = () => {
-
   const mapRef = useRef();
   const [marker, setMarker] = useState([
     -20.23989283970564, -70.13418353488936,
   ]);
-
   const { key } = useParams();
-
 
   const setMarkerPosition = (position) => {
     setMarker(position);
@@ -27,14 +21,12 @@ const Map = () => {
     mapRef.current.setView(position, 13);
   };
 
-
   useEffect(() => {
     axios
       .get(`http://localhost:8080/api/region/region/${key}`)
       .then((response) => {
         /* console.log(response.data); */
         setMarker([response.data.coordenadaX, response.data.coordenadaY]);
-     
       });
   }, [key]);
 
@@ -45,7 +37,7 @@ const Map = () => {
         ref={mapRef}
         zoom={13}
         scrollWheelZoom={false}
-        dragging={false}
+        dragging={true}
         zoomControl={false}
       >
         <TileLayer
@@ -53,8 +45,8 @@ const Map = () => {
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker position={marker}>
-          <Popup>Region de Tarapacá
-            <Modal/>
+          <Popup>
+            <Modal />
           </Popup>
         </Marker>
       </MapContainer>
