@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/map/:key" element={<Map />} />
         <Route path="/lista" element={<ListaRegion />}  />
+        {/*<Route path="/sobre-nosotros" element={< />}  />*/}
       </Routes>
       <Footer/>
     </div>
