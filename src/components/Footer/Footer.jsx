@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import '../../assets/style/Footer.css'
 import logoFooter from '../../assets/img/icons/OceanFooter.svg'
 import numero from '../../assets/img/icons/numero.svg'
 import mail from '../../assets/img/icons/mail.svg'
