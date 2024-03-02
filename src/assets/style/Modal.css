@@ -1,0 +1,42 @@
+.scroll-container {
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+   
+.scroll-container {
+  max-height: 310px;
+  overflow-y: auto !important;
+  width: 450px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.miTabla th{
+  border-bottom: 1px solid black;
+}
+
+.miTabla tbody tr:nth-child(odd) {
+  background-color: #50bb6500;
+}
+
+th, td {
+  padding: 10px;
+}
+
+
+th{
+  position: sticky;
+}
