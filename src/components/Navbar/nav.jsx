@@ -1,4 +1,5 @@
-import "../../assets/style/navbar.css"
+import "../../assets/style/navbar.css";
+import { Link } from "react-router-dom";
 
 /* cambiar etiquetas a por link cuando se agregen las dependencias react router */
 const nav = () => {
@@ -7,13 +8,13 @@ const nav = () => {
       <nav className="navbar">
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="#">Mapa</a>
+            <Link to="/map">Mapa</Link>
           </li>
           <li>
-            <a href="#">Sobre nosotros</a>
+            <Link to="/sobre-nosotros">Sobre Nosotros</Link>
           </li>
         </ul>
       </nav>
