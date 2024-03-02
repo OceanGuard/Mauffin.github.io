@@ -10,7 +10,7 @@ function ListaRegion({ setMarkerPosition }) {
         {data.map((item) => (
           <li key={item.regionId}>
             <Link
-              to={`/map/${item.regionId}`}
+              to={`/map/especies/${item.regionId}`}
               onClick={() =>
                 setMarkerPosition([item.coordenadaX, item.coordenadaY])
               }
