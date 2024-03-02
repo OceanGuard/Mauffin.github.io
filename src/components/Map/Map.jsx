@@ -4,15 +4,23 @@ import { useEffect, useRef, useState } from "react";
 import "../../assets/style/map.css";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
-import ListaRegion from "../Pages/Lista/ListaRegion";
+import { map } from "leaflet";
+import ListaRegion from "../Lista/ListaRegion";
 import Modal from "../Modal/Modal";
 
+/* let marker = [-20.23989283970564, -70.13418353488936]; */
+
 const Map = () => {
+  
+  const [marker, setMarker] = useState([-39.57, -92.24]);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const mapRef = useRef();
-  const [marker, setMarker] = useState([
-    -20.23989283970564, -70.13418353488936,
-  ]);
   const { key } = useParams();
+
+  //Controles de Sidebar
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
 
   const setMarkerPosition = (position) => {
     setMarker(position);
@@ -32,25 +40,32 @@ const Map = () => {
 
   return (
     <>
-      <MapContainer
-        center={marker}
-        ref={mapRef}
-        zoom={13}
-        scrollWheelZoom={false}
-        dragging={true}
-        zoomControl={false}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={marker}>
-          <Popup>
-            <Modal />
-          </Popup>
-        </Marker>
-      </MapContainer>
-      <ListaRegion setMarkerPosition={setMarkerPosition} />
+      <div className="map-container">
+        <MapContainer
+          center={marker}
+          ref={mapRef}
+          zoom={4}
+          scrollWheelZoom={false}
+          dragging={false}
+          zoomControl={false}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={marker}>
+            <Popup>
+              <Modal />
+            </Popup>
+          </Marker>
+        </MapContainer>
+        <div className={`sidebar ${sidebarOpen ? "show" : ""}`}>
+          {<ListaRegion setMarkerPosition={setMarkerPosition} />}
+        </div>
+        <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
+          {sidebarOpen ? "Cerrar Sidebar" : "Abrir Sidebar"}
+        </button>
+      </div>
     </>
   );
 };

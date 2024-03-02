@@ -37,3 +37,36 @@
   margin-right: 5px;
   margin-top: 5px;
 }
+
+.map-container {
+  position: relative;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40vh; /* Ancho de la barra lateral */
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(-60vh); /* Ocultar la barra lateral por defecto */
+}
+
+.sidebar.show {
+  transform: translateX(
+    0
+  ); /* Mostrar la barra lateral cuando se agrega la clase 'show' */
+}
+
+.sidebar-toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+}
