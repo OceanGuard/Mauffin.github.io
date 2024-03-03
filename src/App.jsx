@@ -19,10 +19,10 @@ function App() {
         <Route path="/map" element={<Map />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/map/regiones/:key" element={<Map />} />
-        <Route path="/map/especies/:id" element={<Map/>}/>
-        <Route path="/map/especies/descripcion/:id" element={<Map/>}/>
+        <Route path="/map/especies/:id" element={<Map />} />
+        <Route path="/map/especies/descripcion/:id" element={<Map />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
