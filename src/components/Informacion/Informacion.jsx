@@ -11,7 +11,7 @@ const Informacion = () => {
       <section className="informacionbg">
         <section className="informacion1">
           <div className="info-texto">
-            <h1>Preservando la Vida Marina</h1>
+            <h1>La Misión de Ocean Guard</h1>
           </div>
           <section className="info-cards">
             <div className="card">
