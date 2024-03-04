@@ -26,6 +26,9 @@
 
 .miTabla th{
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 0; 
+  z-index: 1;
 }
 
 .miTabla tbody tr:nth-child(odd) {
@@ -40,3 +43,10 @@ th, td {
 th{
   position: sticky;
 }
+
+.titulo{
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+
