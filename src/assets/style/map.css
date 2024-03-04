@@ -21,7 +21,6 @@
   width: 450px !important;
 }
 
-
 .leaflet-container a.leaflet-popup-close-button {
   position: absolute;
   top: 0;
@@ -44,15 +43,20 @@
 }
 
 .sidebar {
+  font: 24px / 36px Tahoma, Verdana, sans-serif;
   position: absolute;
   top: 0;
   left: 0;
   width: 40vh; /* Ancho de la barra lateral */
-  height: 100%;
-  background-color: white;
+  height: 90%;
+  background-color: #ffffff3f;
   z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
+  display: flex; /* Establecer la barra lateral como un contenedor flexible */
+  flex-direction: column; /* Apilar los elementos verticalmente */
+  justify-content: center; /* Alinear los elementos verticalmente al centro */
+  align-items: center; /* Alinear los elementos horizontalmente al centro */
   padding: 20px;
   transition: transform 0.3s ease;
   transform: translateX(-60vh); /* Ocultar la barra lateral por defecto */
@@ -66,7 +70,8 @@
 
 .sidebar-toggle-btn {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 20px; /* Mover el botón hacia la parte superior de la barra lateral */
+  left: 25%; /* Centrar horizontalmente el botón */
+  transform: translateX(-50%); /* Centrar horizontalmente el botón */
   z-index: 1001;
 }
