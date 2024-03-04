@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import "../../assets/style/map.css";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
-import { map } from "leaflet";
 import ListaRegion from "../Lista/ListaRegion";
 import Modal from "../Modal/Modal";
 
@@ -46,7 +45,7 @@ const Map = () => {
           ref={mapRef}
           zoom={4}
           scrollWheelZoom={false}
-          dragging={false}
+          dragging={true}
           zoomControl={false}
         >
           <TileLayer
@@ -54,7 +53,7 @@ const Map = () => {
             url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={marker}>
-            <Popup>
+            <Popup closeOnClick={false}>
               <Modal />
             </Popup>
           </Marker>

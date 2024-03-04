@@ -1,16 +1,32 @@
 import { useState,useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import "../../assets/style/Modal.css"
 import axios from 'axios';
+import Details from '../details/Details';
 
 
 const Modal = () => {
 
   const [especies,setEspecies] = useState([]);
   const [visibleCount, setVisibleCount] = useState(5);
+  const [especieSeleccionada, setEspecieSeleccionada] = useState("");
+  const [abrirDetalles,setAbrirDetalles] = useState(false);
   const {id} = useParams();
 
-  /* Nuevo estado para controlar si el modal está abierto o cerrado */ 
+  console.log(abrirDetalles)
+
+  /* para cerrar segundo popup */
+  const handleOnClose=()=>{
+    setAbrirDetalles(false)
+  }
+
+  /* para abrir popup cuando se seleccione una especie*/
+  /* especie se le pasa al componente hijo details*/
+  const handleEspecieClick = (especie) => {
+    setEspecieSeleccionada(especie);
+    setAbrirDetalles(true)
+    
+  };
 
   const handleScroll = (event) => {
     const { scrollTop, scrollHeight, clientHeight } = event.target;
@@ -35,32 +51,40 @@ const Modal = () => {
       });
   }, [id, visibleCount]);
 
+
   return (
     <>
+    
+    <h4 className='titulo'>
+      Especies en Veda
+    </h4>
+
     <div
         className="scroll-container"
         onScroll={handleScroll}
             >
-                {/* <Modal/> */}
-                <table className="miTabla">
+      <table className="miTabla">
         <thead>
           <tr>
-
-            <th className="nombre">Nombre  Especie </th>
+            <th className="nombre">Nombre Especie</th>
             <th className="apellido">Nombre Cientifico</th>
           </tr>
         </thead>
         <tbody>
         {especies.map((item) => (
-          <tr key={item.especiesId}>
-   
-          <td className="nombre">{item.nombreEspecie}</td>
+          <tr key={item.especiesId} >
+          <td className="nombre" onClick={() => handleEspecieClick(item.nombreEspecie)}> {item.nombreEspecie}</td>
             <td className="apellido">{item.nombreCientifico}</td>
           </tr>
         ))}
       </tbody>
       </table>
       </div>
+
+      {abrirDetalles &&
+        <Details especie={especieSeleccionada} onClose={handleOnClose} />
+      }
+   
     </>
   )
 }
