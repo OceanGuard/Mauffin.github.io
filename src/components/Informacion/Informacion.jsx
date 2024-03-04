@@ -1,6 +1,9 @@
 import "../../assets/style/informacion.css";
 import Foto from "../../assets/img/piratitas.webp";
-import Separador from "../../assets/img/separador.svg";
+import Foto1 from "../../assets/img/foto1.webp";
+import Foto2 from "../../assets/img/foto2.webp";
+import Foto3 from "../../assets/img/foto3.webp";
+import Foto4 from "../../assets/img/foto4.webp";
 
 const Informacion = () => {
   return (
@@ -12,51 +15,49 @@ const Informacion = () => {
           </div>
           <section className="info-cards">
             <div className="card">
-              <img src={Foto} alt="" />
-              <h4>Sisisisi</h4>
+              <img src={Foto1} alt="" />
+              <h4>Innovación Tecnológica al Servicio del Medio Ambiente</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae repudiandae magnam excepturi repellendus quo nemo
-                optio vitae non.
+                Nuestro propósito es claro, utilizar soluciones tecnológicas
+                para educar sobre áreas y especies en veda, previniendo la
+                sobreexplotación y preservando nuestros océanos. La tecnología y
+                la conservación se unen para un impacto duradero.
               </p>
-              <a href="#">Leer más</a>
             </div>
 
             <div className="card">
-              <img src={Foto} alt="" />
-              <h4>Sisisisi</h4>
+              <img src={Foto2} alt="" />
+              <h4>Reconocimiento en la Promoción de la Conservación Marina</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae repudiandae magnam excepturi repellendus quo nemo
-                optio vitae non.
+                Ocean Guard aspira a ser reconocido en la promoción de la
+                conservación marina. Nuestra visión impulsa la restauración y el
+                equilibrio de los océanos a través de tecnologías innovadoras
+                para un medio ambiente sostenible y saludable.
               </p>
-              <a href="#">Leer más</a>
             </div>
 
             <div className="card">
-              <img src={Foto} alt="" />
-              <h4>Sisisisi</h4>
+              <img src={Foto3} alt="" />
+              <h4>Nuestra Historia</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae repudiandae magnam excepturi repellendus quo nemo
-                optio vitae non.
+                Fusionando Programación y Conservación: Ocean Guard nació de la
+                pasión por la programación y la conservación marina. Desde
+                nuestro inicio, fusionamos la innovación tecnológica con el
+                respeto por nuestro entorno marino, desarrollando soluciones
+                como mapas didácticos interactivos.
               </p>
-              <a href="#">Leer más</a>
             </div>
 
             <div className="card">
-              <img src={Foto} alt="" />
-              <h4>Sisisisi</h4>
+              <img src={Foto4} alt="" />
+              <h4>Cada Pequeño Esfuerzo Cuenta</h4>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae repudiandae magnam excepturi repellendus quo nemo
-                optio vitae non.
+                En Ocean Guard, creemos que cada pequeño esfuerzo cuenta en la
+                protección de nuestros preciosos océanos. Únete a nosotros en
+                nuestra misión de fusionar la programación y la conservación
+                marina para un futuro más sostenible.
               </p>
-              <a href="#">Leer más</a>
             </div>
-          </section>
-          <section className="separador">
-            <img src={Separador} alt="" />
           </section>
         </section>
       </section>
