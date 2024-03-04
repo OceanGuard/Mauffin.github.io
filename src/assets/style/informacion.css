@@ -19,7 +19,7 @@
 }
 
 .informacion1 h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
@@ -53,13 +53,13 @@
   height: 220px;
 }
 .card h4 {
-  font-size: 23px;
+  font-size: 1.438rem;
   font-family: lato, sans-serif;
   margin-top: 30px;
 }
 .card p {
   padding: 0 1rem;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   margin-top: 15px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
