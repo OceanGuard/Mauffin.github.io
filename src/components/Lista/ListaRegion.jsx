@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import { Link} from "react-router-dom";
 import axios from "axios";
 
-function ListaRegion({ setMarkerPosition }) {
+function ListaRegion({ setMapViewPosition }) {
 
 const [lista,setLista]= useState([]);
 
