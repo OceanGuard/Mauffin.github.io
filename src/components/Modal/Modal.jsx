@@ -71,8 +71,8 @@ const Modal = () => {
           </tr>
         </thead>
         <tbody>
-        {especies.map((item) => (
-          <tr key={item.especiesId} >
+        {especies.map((item,index) => (
+          <tr key={index} >
           <td className="nombre" onClick={() => handleEspecieClick(item.nombreEspecie)}> {item.nombreEspecie}</td>
             <td className="apellido">{item.nombreCientifico}</td>
           </tr>
