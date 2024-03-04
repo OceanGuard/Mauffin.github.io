@@ -26,9 +26,9 @@ useEffect(()=>{
           <li key={index}>
             <Link
               to={`/map/especies/${item.regionId}`}
-              onClick={() =>
-                setMarkerPosition([item.coordenadaX, item.coordenadaY])
-              }
+              onClick={() => {
+                setMapViewPosition([item.coordenadaX, item.coordenadaY]);
+              }}
             >
               {item.nombreRegion}
             </Link>
@@ -37,6 +37,7 @@ useEffect(()=>{
       </ul>
     </>
   );
+
 }
 
 export default ListaRegion;

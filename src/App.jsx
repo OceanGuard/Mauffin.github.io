@@ -20,7 +20,7 @@ function App() {
         <Route path="/map/regiones/:key" element={<Map />} />
         <Route path="/map/especies/:id" element={<Map/>}/>
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
