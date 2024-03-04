@@ -15,6 +15,7 @@
   padding: 20px;
   margin-top: 0px;
   width: 1536px;
+  height: 1063px;
   margin: auto;
 }
 .sectionbg {
@@ -23,26 +24,30 @@
 }
 
 .sectioncontainer1 h1 {
-  font-size: 6.5rem;
+  font-size: 70px;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
+  margin-top: 150px;
 }
 .primerP {
   color: black;
-  font-size: 2.5rem;
+  font-size: 35px;
   font-family: poppins, "sans-serif";
-  margin-bottom: 96px;
   margin-left: 26px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .segundoP {
-  font-size: 3rem;
+  font-size: 20px;
   font-family: poppins, "sans-serif";
   margin-left: 26px;
 }
-img {
-  width: 404px;
-  height: 505px;
+.div-img img {
+  width: 800px;
+  height: 533px;
+  border-radius: 8px;
+  margin-top: 250px;
 }
 
 /* End Primer Seccion */
@@ -65,16 +70,16 @@ img {
 }
 
 .sectionLeft-text h1 {
-  font-size: 6.5rem;
+  font-size: 70px;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
 }
 
 .secctionRight-text {
-  font-size: 3rem;
+  font-size: 35px;
   font-family: poppins, "sans-serif";
-  margin-left: 26px;
+  margin-right: 26px;
 }
 
 /* End Segunda Seccion */
