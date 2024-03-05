@@ -66,9 +66,15 @@ const Map = () => {
           </Marker>
         </MapContainer>
         <div className={`sidebar ${sidebarOpen ? "show" : ""}`}>
+          <div className="titulo-lista">Lista Regiones</div>
           {<ListaRegion setMapViewPosition={setMapViewPosition} />}
         </div>
-        <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
+
+        <button
+          className={`sidebar-toggle-btn ${sidebarOpen ? "" : "moved"}`}
+          onClick={toggleSidebar}
+        >
+
           <div className="sign">
             {sidebarOpen ? (
               <svg

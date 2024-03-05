@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
-      <hr className="primera-linea" />
       <section className="columnas">
         <section className="menu">
           <h6 className="titulo-menu">Menu</h6>
@@ -46,7 +45,6 @@ function Footer() {
           <img src={logoFooter} alt="logo-OcenGuard" />
         </section>
       </section>
-      <hr className="segunda-linea" />
       <section className="derechos-reservados">
         <img src={copyright} alt="cono-copyright" />
         <p>Hecho con amor por OceanGuards </p>

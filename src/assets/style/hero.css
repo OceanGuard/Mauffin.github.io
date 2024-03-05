@@ -10,7 +10,7 @@
 }
 
 .container {
-  background-color: #078080;
+  background-color: #041421;
   width: 100%;
   height: 1063px;
 }
@@ -19,6 +19,19 @@
 
 .container-hero {
   text-align: center;
+}
+
+.OceanGuardLogo {
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 .container-hero h5 {
@@ -40,35 +53,33 @@
   top: 50px;
 }
 
-.arrow img{
+.arrow img {
   height: 80px;
   width: 80px;
-  animation: bounce 4s ease infinite;
+  animation: bounce 3s ease infinite;
   margin-top: 77px;
-
 }
-
-
 
 /* end img*/
 .gradiant {
   width: 100%;
   height: 250px;
   background: rgb(7, 128, 128);
-  background: linear-gradient(
-    180deg,
-    rgba(7, 128, 128, 1) 0%,
-    rgba(213, 244, 239, 1) 100%
-  );
+  background: linear-gradient(180deg, #041421, rgba(7, 77, 102, 1) 100%);
 }
-
 
 /* Star Animation Arrow*/
 
 @keyframes bounce {
-  70% { transform:translateY(0%); }
-  80% { transform:translateY(-15%); }
-  100% { transform:translateY(0); }
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* End Animation Arrow*/
