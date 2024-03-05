@@ -4,14 +4,13 @@ import logoFooter from '../../assets/img/icons/OceanFooter.svg'
 import numero from '../../assets/img/icons/numero.svg'
 import mail from '../../assets/img/icons/mail.svg'
 import localizacion from '../../assets/img/icons/localizacion.svg'
-import copyright from '../../assets/img/icons/copyright.svg'
+import corazon from '../../assets/img/icons/corazon.svg'
 import { Link } from 'react-router-dom'
 
 
 function Footer() {
     return (
         <footer className="footer" >
-            <hr className='primera-linea' />
                 <section className='columnas'>
                     <section className="menu">
                         <h6 className='titulo-menu'>Menu</h6>
@@ -33,10 +32,9 @@ function Footer() {
                         <img src={logoFooter} alt="logo-OcenGuard" />
                     </section>
                 </section>
-            <hr className='segunda-linea' />
-            <section className='derechos-reservados'>
-                <img src={copyright} alt="cono-copyright" />
-                <p>Todos los derechos reservados</p>
+            <section className='frase-final'>
+                <img src={corazon} alt="icono-corazon" />
+                <p>Hecho con amor por el grupo 8</p>
             </section>
         </footer>
     )
