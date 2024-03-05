@@ -42,8 +42,13 @@
   height: 100vh; /* Ajusta la altura según sea necesario */
 }
 
+.titulo-lista {
+  font: 24px / 36px poppins, "sans-serif";
+  color: #000;
+}
+
 .sidebar {
-  font: 24px / 36px Tahoma, Verdana, sans-serif;
+  font: 20px / 30px poppins, "sans-serif";
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +87,7 @@
 .sidebar-toggle-btn {
   position: absolute;
   top: 0px; /* Mover el botón hacia la parte superior de la barra lateral */
-  left: 5%; /* Centrar horizontalmente el botón */
+  left: 20%; /* Centrar horizontalmente el botón */
   z-index: 1001;
   margin: 8px;
   display: flex;
@@ -97,6 +102,12 @@
   transition-duration: 0.3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background-color: rgb(255, 255, 255);
+  transition: left 0.6s ease-in-out; /* Agrega una transición suave */
+}
+
+/* Mover el botón hacia la izquierda cuando sidebarOpen sea false */
+.sidebar-toggle-btn.moved {
+  left: 0; /* Ajusta según sea necesario */
 }
 
 .sidebar-toggle-btn:disabled {
@@ -118,6 +129,7 @@
 .sign svg path {
   fill: white;
 }
+
 /* text */
 .text {
   position: absolute;
@@ -129,6 +141,7 @@
   font-weight: 600;
   transition-duration: 0.3s;
 }
+
 /* hover effect on button width */
 .sidebar-toggle-btn:hover {
   width: 125px;
@@ -140,14 +153,11 @@
   width: 30%;
   padding-left: 6px;
 }
+
 /* hover effect button's text */
 .sidebar-toggle-btn:hover .text {
   opacity: 1;
   width: 70%;
   transition-duration: 0.3s;
   padding-right: 10px;
-}
-/* button click effect*/
-.sidebar-toggle-btn:active {
-  transform: translate(2px, 2px);
 }

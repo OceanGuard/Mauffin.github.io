@@ -24,7 +24,7 @@
 }
 
 .sectioncontainer1 h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
@@ -32,14 +32,14 @@
 }
 .primerP {
   color: black;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-family: poppins, "sans-serif";
   margin-left: 26px;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 .segundoP {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: poppins, "sans-serif";
   margin-left: 26px;
 }
@@ -70,14 +70,14 @@
 }
 
 .sectionLeft-text h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
   color: #3fbab3;
   font-family: poly, "sans-serif";
   margin-left: 26px;
 }
 
 .secctionRight-text {
-  font-size: 35px;
+  font-size: 2.188rem;
   font-family: poppins, "sans-serif";
   margin-right: 26px;
 }
