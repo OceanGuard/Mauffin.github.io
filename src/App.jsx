@@ -1,13 +1,10 @@
-
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/nav";
-import Map from "./components/Map/Map";
-
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import ListaRegion from "./components/Pages/Lista/ListaRegion";
+import "./App.css";
+import Navbar from "./components/Navbar/nav";
+import SobreNosotros from "./components/SobreNosotros/SobreNosotros";
+import Hero from "./components/Hero/Hero";
+import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
-
 
 function App() {
   {
@@ -15,15 +12,15 @@ function App() {
   }
   return (
     <div>
-
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/map/:key" element={<Map />} />
-        <Route path="/lista" element={<ListaRegion />}  />
-        {/*<Route path="/sobre-nosotros" element={< />}  />*/}
+        <Route path="/map" element={<Map />} />
+        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        <Route path="/map/regiones/:key" element={<Map />} />
+        <Route path="/map/especies/:id" element={<Map/>}/>
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <footer className="footer" >
+
                 <section className='columnas'>
                     <section className="menu">
                         <h6 className='titulo-menu'>Menu</h6>
@@ -32,12 +33,13 @@ function Footer() {
                         <img src={logoFooter} alt="logo-OcenGuard" />
                     </section>
                 </section>
-            <section className='frase-final'>
+
+                <section className='frase-final'>
                 <img src={corazon} alt="icono-corazon" />
-                <p>Hecho con amor por el grupo 8</p>
+                <p>Hecho con amor por OceanGuards</p>
             </section>
         </footer>
     )
 };
 
-export default Footer
+export default Footer;
