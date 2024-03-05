@@ -9,6 +9,7 @@
   max-height: 310px;
   overflow-y: auto !important;
   width: 450px;
+  max-width: 100%;
 }
 
 .scroll-container::-webkit-scrollbar {
