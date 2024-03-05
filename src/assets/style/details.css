@@ -1,5 +1,5 @@
-.popup {
-  position: absolute;
+.popup{
+  position: fixed;
   top: 2px;
   left: 0px;
   width: 616px;
@@ -10,6 +10,11 @@
   z-index: 9999999;
   padding: 33px 22px 33px 22px !important;
 }
+
+.popup p{
+  margin: 0px;
+}
+
 
 .h3s {
   text-align: center;
@@ -63,6 +68,7 @@
 .div2 {
   width: 219px;
   height: 107px;
+  overflow-y: scroll;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 }
