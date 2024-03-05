@@ -69,3 +69,50 @@
   width: 100%;
   height: 80%;
 }
+
+/*media query*/
+
+@media (max-width: 108.875rem) {
+  .informacion1{
+    height: auto;
+    width: auto;
+  }
+  .card{
+    margin-left: 4.625rem;
+  }
+  .prim-seg-card{
+    border-left: 1px solid black;
+  }
+  .info-texto h1 {
+    border-left: 1px solid black;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 68.125rem){
+  .info-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .terc-cuart-card{
+    border-left: 1px solid black;
+  }
+  .card{
+    max-width: none;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 530px){
+  .card{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 280px){
+  .info-texto h1{
+    font-size: 50px;
+  }
+}
