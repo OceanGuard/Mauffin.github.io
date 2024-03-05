@@ -25,10 +25,11 @@
 }
 
 .miTabla th{
-  border-bottom: 1px solid black;
   position: sticky;
   top: 0; 
   z-index: 1;
+  font-family: 'Poppins';
+  background: #132126;
 }
 
 .miTabla tbody tr:nth-child(odd) {
