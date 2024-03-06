@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
 
+
 function App() {
   {
     /*agregar las vistas de los componentes en las rutas */

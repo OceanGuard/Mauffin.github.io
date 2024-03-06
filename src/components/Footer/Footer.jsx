@@ -4,15 +4,14 @@ import logoFooter from '../../assets/img/icons/OceanFooter.svg'
 import numero from '../../assets/img/icons/numero.svg'
 import mail from '../../assets/img/icons/mail.svg'
 import localizacion from '../../assets/img/icons/localizacion.svg'
-import corazon from '../../assets/img/icons/corazon.svg'
+//import corazon from '../../assets/img/icons/corazon.svg'
 import { Link } from 'react-router-dom'
 
 
 function Footer() {
   return (
-    <footer className="footer" >
-
-      <section className='columnas'>
+    <footer className="footer">
+      <section className="columnas">
         <section className="menu">
           <h6 className='titulo-menu'>Menu</h6>
           <ul>
@@ -37,10 +36,10 @@ function Footer() {
       </section>
 
       <section className='frase-final'>
-        <div className='imagen-corazon'>
+        {/*<div className='imagen-corazon'>
           <img src={corazon} alt="icono-corazon" />
-        </div>
-        <p>Hecho con amor por OceanGuards</p>
+  </div>*/}
+        <p>Hecho con 🩵 por OceanGuards</p>
       </section>
     </footer>
   )
