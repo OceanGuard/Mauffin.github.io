@@ -133,6 +133,11 @@
     margin-left: 20px;
   }
 }
+@media (max-width: 335px) {
+  .titulo-ocean-hero h1{
+    font-size: 80px;
+  }
+}
 @media (max-width: 280px){
   .titulo-ocean-hero h1 {
     font-size: 70px;

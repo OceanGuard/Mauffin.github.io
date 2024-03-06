@@ -11,7 +11,7 @@ a{
     padding: 20px;
     background-color: #0c1825;
     flex-direction: column;
-    font-family: poppins;
+    font-family: poppins, "sans-serif";
 
 }
 
@@ -41,7 +41,7 @@ a{
   margin: 0px 10px 10px 0px;
   padding-right: 60px;
   color: #d6d6d6;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: poppins, "sans-serif";
 }
 .menu ul  li {
   list-style-type: none;
@@ -72,7 +72,7 @@ a{
   margin: 0px 0px 10px 20px;
   padding-right: 60px;
   color: #d6d6d6;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: poppins, "sans-serif";
 }
 
 .contacto ul  li {
@@ -84,7 +84,7 @@ a{
   flex-direction: row;
   font-size: 23px;
   color: #d6d6d6;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: poppins, "sans-serif";
 }
 
 .contacto span {
@@ -141,7 +141,7 @@ a{
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: poppins, "sans-serif";
   color: #cecece;
 }
 
