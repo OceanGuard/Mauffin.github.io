@@ -1,0 +1,22 @@
+.boton-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0a5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .boton-inicio.visible {
+    opacity: 1;
+  }
+  
+  .boton-inicio.hidden {
+    opacity: 0;
+  }
+  
