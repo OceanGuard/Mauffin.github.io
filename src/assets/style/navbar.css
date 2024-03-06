@@ -1,33 +1,128 @@
 * {
-  box-sizing: none;
-  padding: 0px;
-  margin: 0px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #152a3f;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 5px 10%;
 }
-
+.logoNav img {
+  height: 45px;
+  width: auto;
+  transition: all 0.3s;
+}
+.logoNav {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+.logoNav img:hover {
+  transform: scale(1.05);
+}
 .navbar li {
+  list-style: none;
   display: inline-block;
-  border: none;
-}
-
-.navbar a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 0 20px;
   font-size: 18px;
+  font-family: poppins, sans-serif;
+}
+.navbar li:hover {
+  transform: scale(1.1);
+}
+.navbar a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #286dad;
+}
+.menuNav {
+  display: none;
+}
+.menuNav button {
+  margin-left: 20px;
+  font-weight: 700;
+  color: antiquewhite;
+  padding: 9px 25px;
+  background-color: #3a9ca3;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.menuNav button:hover {
+  background-color: #27676b;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
+@media screen and (max-width: 800px) {
+  .navbar li {
+    display: none;
+  }
+  .menuNav {
+    display: inherit;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: #152a3ff8;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.overlay.open {
+  width: 100%;
+}
+.overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  font-weight: 500;
+  color: aliceblue;
+  font-family: poppins, sans-serif;
+  text-decoration: none;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #8b67ac;
+}
+.overlay a:hover {
+  transform: scale(1.1);
+}
+.closeNav {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .closeNav {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
