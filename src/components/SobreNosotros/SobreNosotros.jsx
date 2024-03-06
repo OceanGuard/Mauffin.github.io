@@ -4,14 +4,14 @@ const SobreNosotros = () => {
   return (
     <div>
       <div className="sobre-nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>
+        <h1>Sobre Nosotros</h1>
+        <p id="text">
           Somos una organización comprometida con la protección de las especies
           submarinas en el territorio chileno. Nuestra misión es promover la
           conservación de la vida marina a través de la difusión de información
           precisa sobre las vedas y regulaciones que protegen a estas especies.
         </p>
-        <p>
+        <p id="text">
           En nuestra aplicación, proporcionamos datos actualizados sobre las
           vedas establecidas por las autoridades pertinentes, así como
           información sobre la importancia de preservar el ecosistema marino.
@@ -27,7 +27,7 @@ const SobreNosotros = () => {
             saludable para las generaciones futuras.
           </p>
         </div>
-        <p>
+        <p id="text">
           ¡Gracias por apoyar nuestra causa y unirte a nosotros en la protección
           del mar chileno y sus fascinantes criaturas submarinas!
         </p>
