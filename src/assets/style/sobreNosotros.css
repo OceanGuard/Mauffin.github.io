@@ -10,16 +10,16 @@ body {
 }
 
 .sobre-nosotros {
-  font-family: Arial, sans-serif;
+  font-family: poppins, "sans-serif";
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20vh auto;
   padding: 20px;
   background-color: #eff5f7;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.sobre-nosotros h2 {
+.sobre-nosotros h1 {
   color: #1e6f74;
   margin-top: 0;
   font-size: 48px;
@@ -27,20 +27,25 @@ body {
   padding-bottom: 10px;
 }
 
-.sobre-nosotros p {
+.sobre-nosotros #text {
   color: #384d4f;
   line-height: 1.6;
   margin-top: 32px;
+  font-size: 22px;
 }
 
 .sobre-nosotros .resaltar {
+  margin: 20px;
   background-color: #b0d4de;
-  padding: 24px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .sobre-nosotros .resaltar p {
+  font-size: 20px;
   font-weight: bold;
   color: #1e6f74;
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }

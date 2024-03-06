@@ -49,7 +49,7 @@
   overflow-x: hidden;
 }
 
-.titulo-lista {
+.titulo-lista > ul > li {
   font: 24px / 36px poppins, "sans-serif";
   color: #000;
 }
@@ -61,7 +61,7 @@
   left: 0;
   width: 40vh; /* Ancho de la barra lateral */
   height: 90%;
-  background-color: #ffffff3f;
+  background-color: #fbfcf8;
   z-index: 1000;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
@@ -84,7 +84,13 @@
   list-style-type: none;
   text-decoration-line: none;
   color: inherit;
+  transition: 0.2s ease;
 }
+
+.sidebar > ul > li > a:hover {
+  text-shadow: 0 1px #000;
+}
+
 .sidebar.show {
   transform: translateX(
     0
