@@ -22,7 +22,7 @@
 }
 
 .OceanGuardLogo {
-  animation: spin 30s linear infinite;
+  animation: spin 0s linear infinite;
 }
 
 @keyframes spin {
