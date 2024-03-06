@@ -20,7 +20,7 @@ const Section = () => {
             </p>
           </div>
           <div className="div-img">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="imagen-de-ballena" />
           </div>
         </section>
       </section>

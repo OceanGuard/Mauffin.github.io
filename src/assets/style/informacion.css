@@ -71,3 +71,59 @@
   width: 100%;
   height: 80%;
 }
+
+/*media query*/
+
+@media (max-width: 1742px) {
+  .informacion1{
+    height: auto;
+    width: auto;
+    border-left: none;
+  }
+  .card{
+    margin-left: 4.625rem;
+  }
+  .prim-seg-card{
+    border-left: 1px solid #d0d6d6;
+  }
+  .info-texto h1 {
+    border-left: 1px solid #d0d6d6;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 1090px){
+  .info-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .terc-cuart-card{
+    border-left: 1px solid #d0d6d6;
+  }
+  .card{
+    max-width: none;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 530px){
+  .card{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+@media (max-width: 500px) {
+
+  .card img{
+    width: 100%;
+  }
+  .card{
+    overflow: scroll;
+  }
+}
+@media (max-width: 280px){
+  .info-texto h1{
+    font-size: 50px;
+  }
+}

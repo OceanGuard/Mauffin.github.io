@@ -12,9 +12,13 @@ const Hero = () => {
     <>
       <main className="container">
         <section className="container-hero">
-          <img src={Logo} alt="Logo Ocean Guard" className="OceanGuardLogo" />
+          <div className="imagen-logo-hero">
+            <img src={Logo} alt="Logo Ocean Guard" />
+          </div>
           <div className="ocean">
-            <h1>Ocean Guard </h1>
+            <div className="titulo-ocean-hero">
+              <h1>Ocean Guard </h1>
+            </div>
             <div className="preservar">
               <h5>preservando la vida marina</h5>
             </div>

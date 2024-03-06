@@ -14,8 +14,9 @@ const Informacion = () => {
             <h1>La Misión de Ocean Guard</h1>
           </div>
           <section className="info-cards">
+            <section className="prim-seg-card">
             <div className="card">
-              <img src={Foto1} alt="" />
+              <img src={Foto1} alt="tortuga-marina" />
               <h4>Innovación Tecnológica al Servicio del Medio Ambiente</h4>
               <p>
                 Nuestro propósito es claro, utilizar soluciones tecnológicas
@@ -26,7 +27,7 @@ const Informacion = () => {
             </div>
 
             <div className="card">
-              <img src={Foto2} alt="" />
+              <img src={Foto2} alt="peces y corales" />
               <h4>Reconocimiento en la Promoción de la Conservación Marina</h4>
               <p>
                 Ocean Guard aspira a ser reconocido en la promoción de la
@@ -35,9 +36,10 @@ const Informacion = () => {
                 para un medio ambiente sostenible y saludable.
               </p>
             </div>
-
+            </section>
+            <section className="terc-cuart-card">
             <div className="card">
-              <img src={Foto3} alt="" />
+              <img src={Foto3} alt="pez nadando" />
               <h4>Nuestra Historia</h4>
               <p>
                 Fusionando Programación y Conservación: Ocean Guard nació de la
@@ -49,7 +51,7 @@ const Informacion = () => {
             </div>
 
             <div className="card">
-              <img src={Foto4} alt="" />
+              <img src={Foto4} alt="cardumen bajo el agua" />
               <h4>Cada Pequeño Esfuerzo Cuenta</h4>
               <p>
                 En Ocean Guard, creemos que cada pequeño esfuerzo cuenta en la
@@ -58,6 +60,7 @@ const Informacion = () => {
                 marina para un futuro más sostenible.
               </p>
             </div>
+            </section>
           </section>
         </section>
       </section>

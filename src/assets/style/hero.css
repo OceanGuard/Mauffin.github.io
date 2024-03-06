@@ -83,3 +83,81 @@
 }
 
 /* End Animation Arrow*/
+
+/*media query*/
+@media (max-width: 1630px) {
+  .imagen-logo-hero{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-logo-hero img{
+    max-width: 100%;
+    height: auto;
+  }
+  .container-hero h1 {
+    font-family: poppins, "sans-serif";
+    font-size: 10.625rem;
+    width: auto;
+  }
+  .titulo-ocean-hero{
+    margin-bottom: 15px;
+  }
+
+}
+@media (max-width: 580px) {
+  .container-hero h1 {
+    font-family: poppins, "sans-serif";
+    font-size: 150px;
+    width: auto;
+  }
+  .titulo-ocean-hero{
+  width: auto;
+
+  }
+  .titulo-ocean-hero h1{
+    font-size: 100px;
+  }
+}
+@media (max-width: 412px){
+  .titulo-ocean-hero{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .preservar{
+    margin-top: 50px;
+  }
+  .imagen-logo-hero{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 280px){
+  .titulo-ocean-hero h1 {
+    font-size: 70px;
+  }
+  .titulo-ocean-hero{
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .imagen-logo-hero{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 540px){
+  .titulo-ocean-hero{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .preservar{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 430px){
+  .imagen-logo-hero{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
