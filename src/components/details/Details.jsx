@@ -12,8 +12,8 @@ const Details = ({especie,onClose}) => {
 
   const [detalles,setDetalles] = useState([])
   const formatoFecha = (fecha) => {
-    const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(fecha).toLocaleDateString('es-ES', opcionesFecha);
+  const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(fecha).toLocaleDateString('es-ES', opcionesFecha);
   };
   
 
@@ -33,11 +33,12 @@ const Details = ({especie,onClose}) => {
   return (
     <>
         <div className="popup" >
-          <h3 className='h3s'>Detalles de la especie</h3>
         <div className='btn'>
         <button className='btn'  onClick={(e) => onClose()}>cerrar</button>
-            
         </div>
+          
+          <h3 className='h3s'>Detalles de la especie</h3>
+        
         <div className='fecha'>
 
           <p>Fecha de Inicio:<span className='span-gap'>{formatoFecha(detalles?.fechaDeInicio)}</span></p> 
@@ -72,8 +73,6 @@ const Details = ({especie,onClose}) => {
                   className="div3"
             />
 
-           
-   
             
             <Card icono={especificacion}
                   titulo="Especificacion Veda" 
