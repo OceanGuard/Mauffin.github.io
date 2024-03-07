@@ -78,7 +78,7 @@ const Map = () => {
             closeOnClick={true}
             key={`mapKey${mapKey}`}
           >
-            <Popup>
+            <Popup >
               <Modal />
             </Popup>
           </Marker>
