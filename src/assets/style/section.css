@@ -16,8 +16,8 @@
   padding: 20px;
   margin-top: 0px;
   width: 96rem;
-height: 66.438rem;
-padding-left: 80px;
+  height: 66.438rem;
+  padding-left: 80px;
   margin: auto;
 }
 .sectionbg {
@@ -28,9 +28,10 @@ padding-left: 80px;
 .sectioncontainer1 h1 {
   font-size: 4.375rem;
   color: #ffffff;
-  font-family: poly, "sans-serif";
+  font-family: poppins, "sans-serif";
   margin-left: 26px;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 .primerP {
   color: #b1c6ca;
@@ -77,7 +78,7 @@ padding-left: 80px;
 .sectionLeft-text h1 {
   font-size: 4.375rem;
   color: #ffffff;
-  font-family: poly, "sans-serif";
+  font-family: poppins, "sans-serif";
   margin-left: 26px;
 }
 
@@ -90,10 +91,10 @@ padding-left: 80px;
 
 /* End Segunda Seccion */
 
-  /*media query*/
-  
-  @media (max-width: 1742px) {
-  .sectioncontainer1{
+/*media query*/
+
+@media (max-width: 1742px) {
+  .sectioncontainer1 {
     display: flex;
     flex-direction: row;
     height: 68.938rem;
@@ -101,14 +102,14 @@ padding-left: 80px;
     padding-left: 20px;
     border-left: none;
   }
-  .sectionContainer2{
+  .sectionContainer2 {
     display: flex;
     flex-direction: row;
     height: 66.438rem;
     width: auto;
     border-right: none;
   }
-  .sectionLeft-text h1{
+  .sectionLeft-text h1 {
     height: auto;
     width: auto;
     margin-left: 3.125rem;
@@ -120,73 +121,68 @@ padding-left: 80px;
     padding: 300px 50px 500px 0px;
     margin-right: 50px;
   }
-  .secctionRight-text{
+  .secctionRight-text {
     height: 100%;
   }
 
-  .div-texto{
+  .div-texto {
     display: flex;
     flex-direction: column;
-
   }
-  .primerP{
+  .primerP {
     height: 19.875rem;
     width: 26.375rem;
   }
-  .segundoP{
+  .segundoP {
     height: 13.125rem;
     width: 26.375rem;
   }
-  .div-texto h1{
+  .div-texto h1 {
     height: 15.563rem;
     width: 26.375rem;
   }
-  .div-img{
+  .div-img {
     display: flex;
     height: 33.313rem;
     width: 50rem;
     border-radius: 8px;
     margin-top: 2.625rem;
     margin-right: 50px;
-
   }
-  .div-img img{
+  .div-img img {
     max-width: 100%;
     height: 100%;
     /*padding-right: 1500px;*/
   }
-  .div-texto{
+  .div-texto {
     padding-left: 0px;
   }
 }
 
 @media (max-width: 1300px) {
-  .sectioncontainer1{
+  .sectioncontainer1 {
     gap: 80px;
     display: flex;
     flex-direction: column;
     height: auto;
     border-left: 1px solid #d0d6d6;
     margin-left: 30px;
-    
   }
-  .div-img{
-
+  .div-img {
     margin: 0px 0px 30px 0px;
     width: 100%;
-    
   }
-  .div-img img{
+  .div-img img {
     margin-top: 0px;
     width: auto;
   }
-  .div-texto h1{
+  .div-texto h1 {
     margin-top: 0px;
   }
 }
 
-@media (max-width: 1090px){
-  .sectionContainer2{
+@media (max-width: 1090px) {
+  .sectionContainer2 {
     display: flex;
     flex-direction: column;
     border-right: 1px solid #d0d6d6;
@@ -195,7 +191,7 @@ padding-left: 80px;
     padding-bottom: 30px;
   }
   .secctionRight-text p {
-    padding: 0px ;
+    padding: 0px;
     border-right: none;
     margin-right: 3.125rem;
     margin-left: 3.125rem;
@@ -204,155 +200,152 @@ padding-left: 80px;
   .sectionLeft-text h1 {
     margin-right: 3.125rem;
   }
-  .secctionRight-text{
+  .secctionRight-text {
     height: auto;
     margin-right: 0px;
   }
-  .div-texto h1{
+  .div-texto h1 {
     height: auto;
     width: 100%;
     font-size: 4.375rem;
     margin-left: 0px;
     margin-right: 10px;
   }
-  .primerP{
+  .primerP {
     margin-left: 0px;
     margin-right: 10px;
     width: 100%;
     height: auto;
   }
-  .segundoP{
+  .segundoP {
     margin-left: 0px;
     margin-right: 10px;
     width: 90%;
     height: auto;
   }
-  .segundoP p{
+  .segundoP p {
     font-size: 1.25em;
   }
 }
 @media (max-width: 700px) {
-  .div-img{
+  .div-img {
     width: 25rem;
     margin-right: 10px;
   }
-
 }
 @media (max-width: 460px) {
-  .div-img{
+  .div-img {
     width: 360px;
     height: 333px;
   }
 }
-@media (max-width: 430px){
-  .div-texto h1{
+@media (max-width: 430px) {
+  .div-texto h1 {
     margin-top: 30px;
     font-size: 65px;
   }
-  .div-img{
+  .div-img {
     width: 260px;
   }
 }
 
-@media (max-width: 414px){
-  .sectionContainer2 h1{
+@media (max-width: 414px) {
+  .sectionContainer2 h1 {
     margin-left: 0px;
   }
-  .secctionRight-text p{
+  .secctionRight-text p {
     margin-left: 0px;
   }
-  .sectionContainer2{
+  .sectionContainer2 {
     margin-left: 30px;
   }
 }
 
-
-@media (max-width: 412px){
-  .div-texto{
+@media (max-width: 412px) {
+  .div-texto {
     width: 90%;
   }
-  .segundoP{
+  .segundoP {
     margin: 0px 10px 0px 0px;
     padding-bottom: 0px;
   }
   .sectionContainer2 h1 {
     padding-top: 20px;
   }
-  .div-texto h1{
+  .div-texto h1 {
     font-size: 3.75rem;
   }
 }
 
-@media (max-width: 390px){
-  .div-texto h1{
+@media (max-width: 390px) {
+  .div-texto h1 {
     margin-top: 30px;
     font-size: 60px;
   }
-  .sectionContainer2 h1{
+  .sectionContainer2 h1 {
     font-size: 60px;
     margin-left: 0px;
   }
-  .sectionContainer2{
+  .sectionContainer2 {
     margin-left: 40px;
   }
-  .secctionRight-text p{
+  .secctionRight-text p {
     margin-left: 20px;
   }
-
 }
 
-@media (max-width: 375px){
-  .div-texto{
+@media (max-width: 375px) {
+  .div-texto {
     padding-left: 0px;
   }
-  .div-texto h1{
+  .div-texto h1 {
     font-size: 3.125rem;
   }
 }
 
-@media (max-width: 360px){
-  .div-texto h1{
+@media (max-width: 360px) {
+  .div-texto h1 {
     font-size: 2.813rem;
   }
-  .primerP{
+  .primerP {
     font-size: 1.875rem;
   }
-  .segundoP{
+  .segundoP {
     font-size: 1.063rem;
   }
-  .sectionLeft-text h1{
+  .sectionLeft-text h1 {
     font-size: 3.75rem;
     margin-left: 20px;
   }
-  .sectionContainer2{
+  .sectionContainer2 {
     margin-right: 30px;
     margin-left: 30px;
   }
-  .sectionContainer2 p{
+  .sectionContainer2 p {
     margin-right: 0px;
     margin-left: 0px;
     padding-right: 20px;
   }
 }
 @media (max-width: 330px) {
-  .div-img{
+  .div-img {
     width: 200px;
   }
 }
 @media (max-width: 310px) {
-  .div-texto h1{
+  .div-texto h1 {
     font-size: 35px;
   }
 }
-@media (max-width: 280px){
-  .div-texto h1{
-    font-size: 2.550rem;
+@media (max-width: 280px) {
+  .div-texto h1 {
+    font-size: 2.55rem;
     margin-top: 20px;
   }
-  .primerP{
+  .primerP {
     font-size: 28px;
   }
-  .segundoP{
+  .segundoP {
     font-size: 21px;
   }
   .sectionContainer2 h1 {
@@ -360,24 +353,18 @@ padding-left: 80px;
     margin-right: 0px;
     margin-left: 20px;
   }
-  .sectionContainer2{
+  .sectionContainer2 {
     margin-right: 20px;
     margin-left: 1px;
   }
-  .secctionRight-text p{
+  .secctionRight-text p {
     font-size: 28px;
   }
-  .sectionContainer2 p{
+  .sectionContainer2 p {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .div-texto{
+  .div-texto {
     padding-left: 0px;
   }
 }
-
-
-
-
-
-

@@ -21,7 +21,7 @@
 .informacion1 h1 {
   font-size: 4.375rem;
   color: #ffffff;
-  font-family: poly, "sans-serif";
+  font-family: poppins, "sans-serif";
   margin-left: 26px;
 }
 .info-texto {
@@ -75,15 +75,15 @@
 /*media query*/
 
 @media (max-width: 1742px) {
-  .informacion1{
+  .informacion1 {
     height: auto;
     width: auto;
     border-left: none;
   }
-  .card{
+  .card {
     margin-left: 4.625rem;
   }
-  .prim-seg-card{
+  .prim-seg-card {
     border-left: 1px solid #d0d6d6;
   }
   .info-texto h1 {
@@ -92,38 +92,36 @@
   }
 }
 
-@media (max-width: 1090px){
-  .info-cards{
+@media (max-width: 1090px) {
+  .info-cards {
     display: flex;
     flex-direction: column;
   }
-  .terc-cuart-card{
+  .terc-cuart-card {
     border-left: 1px solid #d0d6d6;
   }
-  .card{
+  .card {
     max-width: none;
     margin: 20px auto;
   }
 }
-@media (max-width: 530px){
-  .card{
+@media (max-width: 530px) {
+  .card {
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
   }
-
 }
 @media (max-width: 500px) {
-
-  .card img{
+  .card img {
     width: 100%;
   }
-  .card{
+  .card {
     overflow: scroll;
   }
 }
-@media (max-width: 280px){
-  .info-texto h1{
+@media (max-width: 280px) {
+  .info-texto h1 {
     font-size: 50px;
   }
 }
