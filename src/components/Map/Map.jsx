@@ -10,7 +10,7 @@ import Modal from "../Modal/Modal";
 /* let marker = [-20.23989283970564, -70.13418353488936]; */
 
 const Map = () => {
-  const [marker, setMarker] = useState([0, 0]);
+  const [marker, setMarker] = useState([90.0, 135.0]);
   const [center, setCenter] = useState([-39.57, -92.24]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [mapKey, setMapKey] = useState(0);
