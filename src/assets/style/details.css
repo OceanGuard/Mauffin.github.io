@@ -21,17 +21,24 @@
 .h3s {
   text-align: center;
   padding: 0px 0px 17px 0px;
+  font-size: 2rem;
 }
 
+.fecha p:nth-child(2){
+  padding-bottom: 15px;
+}
 .fecha p {
   font-family: poppins, "san-serif";
   display: flex;
   justify-content: end;
   gap: 8px;
+  font-size: 1rem;
+  
 }
 
+
 .span-gap {
-  padding-left: 26px;
+  padding-left: 23px;
 }
 
 .nombreEspecie {
@@ -41,13 +48,14 @@
   font-family: poppins, "san-serif";
   padding-bottom: 10px !important;
   gap: 10px;
+  font-size: 1rem;
 }
 
 .btn {
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-right: 20px !important;
+  margin-right: 0px !important;
   width: auto;
 }
 
@@ -93,13 +101,9 @@
     gap: 16px;
   }
   .popup{
-    width: 262px;
     max-width: 100%;
+    margin-left: 20%;
     overflow-y: scroll;
-    margin: auto;
-    position: fixed;
-    left: 2px;
-    top: -42px;
   }
 .div1,
 .div2,
@@ -109,6 +113,7 @@
   height: auto;
   margin-right:10px;
 }
+
 }
 @media screen and (min-width:320px)  {
   .grid-container {
@@ -118,15 +123,14 @@
     gap: 16px;
   }
   .popup{
-    width: 302px;
-    max-width: 100vw;
+    max-width: 100%;
+    width: 300px;
+    margin-left: 41px;
     overflow-y: scroll;
-    top: -5px;
-    position: fixed;
-    left: 40px;
-    margin: auto;
+    padding: 15px !important;
   }
- 
+
+
 
   .div1,
 .div2,
@@ -151,6 +155,7 @@
     overflow-y: scroll;
     position: fixed;
     margin: auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -174,7 +179,7 @@
     max-width: 100%;
     overflow-y: scroll;
     position: fixed;
-  
+    padding: 15px !important;
     top: -5px;
     margin: auto;
   }
@@ -205,6 +210,7 @@
     left: -18px;
     top: -5px;
     margin: auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -232,6 +238,7 @@
     position: fixed;
     left: -55px;
     margin:auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -259,6 +266,7 @@
     position: fixed;
     left: -100px;
     margin: auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -285,6 +293,7 @@
     position: fixed;
     left: -100px;
     margin:auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -311,6 +320,7 @@
     top: -9px;
     left: -192px;
     margin: auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -336,6 +346,7 @@
     max-width: 100vw;
     position: fixed;
     margin: auto;
+    padding: 15px !important;
   }
   .div1,
   .div2,
@@ -359,6 +370,7 @@
   }
   .popup {
     max-width: 100vw;
+    padding: 15px !important;
     width: auto;
     position: fixed;
     margin:auto
