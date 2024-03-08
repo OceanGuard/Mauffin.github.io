@@ -1,4 +1,6 @@
 import "../../assets/style/hero.css";
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
 import Logo from "../../assets/img/LogoOcean.svg";
 import Scroll from "../../assets/img/scroll.svg";
 import Secction from "../section/Section";
@@ -6,7 +8,22 @@ import Informacion from "../Informacion/Informacion";
 
 const Hero = () => {
 
+  const logoRef = useRef(null);
 
+  useEffect(() => {
+    const logo = logoRef.current;
+    
+    gsap.to("#path1", { duration: 1, opacity: 1, y: 0 });
+    gsap.to("#path2", { duration: 1, opacity: 1, y: 0, delay: 0.2 });
+    gsap.to("#path3", { duration: 1, opacity: 1, y: 0, delay: 0.4 });
+    gsap.to("#path4", { duration: 1, opacity: 1, y: 0, delay: 0.6 });
+    gsap.to("#path5", { duration: 1, opacity: 1, y: 0, delay: 0.8 });
+    gsap.to("#path6", { duration: 1, opacity: 1, y: 0, delay: 1 });
+    gsap.to("#ellipse1", { duration: 1, opacity: 1, y: 0, delay: 1.2 });
+    gsap.to("#path7", { duration: 1, opacity: 1, y: 0, delay: 1.4 });
+    gsap.to("#path8", { duration: 1, opacity: 1, y: 0, delay: 1.6 });
+    gsap.from(logo, { opacity: 0, duration: 1, y: -50, ease: 'power3.out' });
+  }, []);
   
   return (
     <>
