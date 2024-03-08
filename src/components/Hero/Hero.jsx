@@ -1,5 +1,6 @@
 import "../../assets/style/hero.css";
 import gsap from "gsap";
+import React, { useEffect } from 'react';
 import Logo from "../../assets/img/LogoOcean.svg";
 {
   /*import Arrow from "../../assets/img/arrow-scroll.svg"*/
