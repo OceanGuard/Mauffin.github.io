@@ -1,12 +1,15 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
 import "../../assets/style/details.css"
+import "../../assets/style/button.css"
 import Card from "../Card/Card"
 import nombreCientifico from "../../assets/img/icons/nombreCientifico.svg"
 import nombreEspecie from '../../assets/img/icons/nombreEspecie.svg'
 import descripcionVeda from "../../assets/img/icons/descripcion.svg"
 import coordenadas from "../../assets/img/icons/coordenadas.svg"
 import especificacion from "../../assets/img/icons/especificacion.svg"
+import closeButton from "../../assets/img/icons/closeButton.svg"
+
 
 const Details = ({especie,onClose}) => {
 
@@ -34,14 +37,22 @@ const Details = ({especie,onClose}) => {
     <>
         <div className="popup" >
         <div className='btn'>
-        <button className='btn'  onClick={(e) => onClose()}>cerrar</button>
+        <button className="button"  onClick={(e) => onClose()}>
+          <div className="button-box">
+            <span className="button-elem">
+              <img src={closeButton} alt="" />
+            </span>
+          </div>
+        </button>
+
+        
         </div>
           
           <h3 className='h3s'>Detalles de la especie</h3>
         
         <div className='fecha'>
 
-          <p>Fecha de Inicio:<span className='span-gap'>{formatoFecha(detalles?.fechaDeInicio)}</span></p> 
+          <p className='ptitulo'>Fecha de Inicio:<span className=''>{formatoFecha(detalles?.fechaDeInicio)}</span></p> 
           <p>Fecha de Termino:<p>{formatoFecha(detalles?.fechaDeTermino)}</p></p> 
             
         </div>
@@ -68,7 +79,7 @@ const Details = ({especie,onClose}) => {
               
             <Card icono={coordenadas}
                   titulo="Coordenadas" 
-                  contenido={`${detalles?.regionDeVeda?.coordenadaX} ${detalles?.regionDeVeda?.coordenadaX}`}
+                  contenido={`${detalles?.regionDeVeda?.coordenadaX}${detalles?.regionDeVeda?.coordenadaX}`}
                   borderColor="#549EF2"
                   className="div3"
             />
