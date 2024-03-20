@@ -31,6 +31,7 @@ const Hero = () => {
       <div className="gradiant"></div>
       <Secction />
       <Informacion />
+      
     </>
   );
 };
