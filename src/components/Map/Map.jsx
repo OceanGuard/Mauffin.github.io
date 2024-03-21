@@ -40,7 +40,7 @@ const Map = () => {
     if (key) {
       // Verifica si key está definido
       axios
-        .get(`http://localhost:8080/api/region/region/${key}`)
+        .get(`http://52.55.195.159:8080/api/region/region/${key}`)
         .then((response) => {
           setCenter([response.data.coordenadaX, response.data.coordenadaY]);
         })
@@ -78,7 +78,7 @@ const Map = () => {
             closeOnClick={true}
             key={`mapKey${mapKey}`}
           >
-            <Popup >
+            <Popup>
               <Modal />
             </Popup>
           </Marker>
