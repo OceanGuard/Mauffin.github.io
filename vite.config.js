@@ -4,6 +4,6 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"https://Mauffin.github.io/frontend"
+  base:"https://oceanguard.github.io/frontend/"
 })
 

@@ -1,7 +1,7 @@
 {
   "name": "oceanguard",
   "private": true,
-  "homepage": "https://Mauffin.github.io/frontend",
+  "homepage": "https://oceanguard.github.io/frontend/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
