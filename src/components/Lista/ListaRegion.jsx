@@ -7,7 +7,7 @@ function ListaRegion({ setMapViewPosition }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/region/regiones")
+      .get("http://52.55.195.159:8080/api/region/regiones")
       .then((response) => {
         setLista(response.data);
         console.log(response.data);
