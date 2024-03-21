@@ -17,6 +17,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/frontend" element ={<Hero/>}/>
         <Route path="/map" element={<Map />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/map/regiones/:key" element={<Map />} />
